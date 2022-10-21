@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Quiz App</title>
+</head>
+
+<body onload="myloadFunc()">
+
+    <div id="loader">
+        <img src="./Img/833.gif" alt="">
+    </div>
+
+    <header>
+
+        <div class="overlay"></div>
+        
+        <div class="logo">
+            <a href="#">Quizo</a>
+        </div>
+
+        <section>
+            <h2 class="question"></h2>
+
+            <ul class="options">
+                <li>
+                    <input type="radio" name="option" id="option1" >
+                    <label for="option1">
+                        <span>A</span>
+                        <span class="mcq1 mcq" ></span>
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="option" id="option2" >
+                    <label for="option2">
+                        <span>B</span>
+                        <span class="mcq2 mcq"></span>
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="option" id="option3" >
+                    <label for="option3">
+                        <span>C</span>
+                        <span class="mcq3 mcq"></span>
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="option" id="option4" >
+                    <label for="option4">
+                        <span>D</span>
+                        <span class="mcq4 mcq"></span>
+                    </label>
+                </li>
+            </ul>
+
+        </section>
+
+        <div class="quizbuttons">
+            <button type="button" id="check">Check Answer</button>
+            <button type="button" id="nextbtn">Next</button>
+        </div>
+
+        <div class="ansmodal modaldisplay "> 
+            <button class="back">Back to Quiz </button>
+            <div class="anscontent">
+                <h2>Correct Answer: </h2>
+                <h5 class="correctans">3/5</h5>
+            </div>
+        </div>
+
+    </header>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
